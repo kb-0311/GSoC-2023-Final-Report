@@ -26,6 +26,7 @@ The primary goal of this project was to enhance the Talawa GraphQL API by addres
 
 #### 1. GraphQL Inspector for API Versioning
 
+- ([PR-Link](https://github.com/PalisadoesFoundation/talawa-api/pull/1340))
 - Monitored 100% of API schema using GraphQL-Inspector, ensuring seamless communication of schema
 updates to client apps
 - Implemented versioning in local machine and CI/CD pipeline for each commit in a
@@ -35,17 +36,20 @@ issues.
 - Impact: Improving the maintainability and scalability of the API.
 
 #### 2. Apollo Server Migration
-
+- ([PR-Link](https://github.com/PalisadoesFoundation/talawa-api/pull/1351))
 - Migrated the deprecated Apollo server v2.0 to a newer LTS v4 .
 - Ensured that the API's dependencies are up-to-date and more secure.
 
 #### 3. GraphQL Error-Handling
 
+- ([PR-Link](https://github.com/PalisadoesFoundation/talawa-docs/pull/593))
 - Conducted documentation for GraphQL error-handling mechanisms.
 - Delayed implementation due to breaking changes, prioritized for post-GSoC period.
 
 #### 4. Caching Entities using Redis
 
+- ([PR-Link-1](https://github.com/PalisadoesFoundation/talawa-api/pull/1377))
+- ([PR-Link-2](https://github.com/PalisadoesFoundation/talawa-api/pull/1388))
 - Implemented caching of database entries using Redis.
 - Optimized data retrieval by implementing Redis as an in-memory cache; using table denormalization to reduce
 API query process time from 12.5ms to 0.5ms during cache hit, resulting in a remarkable 99.6% improvement
@@ -53,12 +57,14 @@ by reducing database query overhead
 
 #### 5. Access Control Enforcement in Resolvers
 
+- ([PR-Link](https://github.com/PalisadoesFoundation/talawa-api/pull/1073))
 - Resolved business logic bugs and enhanced security by enforcing access control.
 - Ensured features adhere to defined constraints.
 - Details: [Talawa API Constraints](https://docs.talawa.io/docs/developers/talawa-api/constraints/admin)
 
 #### 6. Encryption of PII Data
 
+- ([PR-Link for next 3 milestones](https://github.com/PalisadoesFoundation/talawa-api/pull/1407))
 - Enhanced security by encrypting Personally Identifiable Information (PII) data stored on disk.
 - Improved security with encryption within the SSL layer.
 
